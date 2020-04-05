@@ -14,9 +14,9 @@ const NextRound = ({ changeTry, openModal, setScore, score, word, setGuessedWord
   return (
     <Modal
       isOpen={modalIsOpen}
-      onRequestClose={closeModal}
       contentLabel="Next round"
       ariaHideApp={false}
+      shouldCloseOnOverlayClick={false}
     >
       <div className="next-round">
         <h2>Правильно!</h2>

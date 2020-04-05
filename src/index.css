@@ -237,12 +237,21 @@ button {
     }
     .dark-blue-button {
       margin: 0 auto;
+      height: 40px;
+    }
+    .next-round {
+      margin: 0;
+      height: 100%;
+    }
+    
+    .ReactModalPortal > .ReactModal__Overlay {
+      height: 500px;
     }
   }
 
   @media screen and (min-width: 812px) {
     .blue-monster {
-      margin-top: 10px;
+      margin-top: 20px;
     }
     .ReactModalPortal,
     .next-round {
@@ -252,5 +261,6 @@ button {
     .dark-blue-monster {
       width: 100px;
     }
+    
   }
 
