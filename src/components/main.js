@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import Lose from 'pages/lose';
 import GuessWord from 'components/guessWord';
@@ -10,6 +10,12 @@ const Main = () => {
   const [correctChars, setCorrectChars] = useState([]);
   const [incorrectChars, setIncorrectChars] = useState([]);
   const [score, setScore] = useState(20);
+
+    useEffect(() => {
+      let newScore = Number(window.localStorage.getItem('score'));
+      setScore(newScore)
+    }, [setScore]);
+
 
   return (
     <div className="container-main device">

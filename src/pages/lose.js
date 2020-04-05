@@ -5,7 +5,7 @@ import greenMonster from 'images/green.png';
 
 const Lose = ({ changeTry, setScore, score }) => (
   <div>
-    {score === 0
+    {score === 0 || (score-20) < 0
       ? <GameOver />
       : <div className="content">
           <h4>От халепа, це не правильно.</h4>
