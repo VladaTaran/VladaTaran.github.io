@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/guess-word-game/static/css/main.8eb71605.chunk.css",
+    "main.js": "/guess-word-game/static/js/main.145b134d.chunk.js",
+    "main.js.map": "/guess-word-game/static/js/main.145b134d.chunk.js.map",
+    "runtime-main.js": "/guess-word-game/static/js/runtime-main.470dccd4.js",
+    "runtime-main.js.map": "/guess-word-game/static/js/runtime-main.470dccd4.js.map",
+    "static/css/2.52f67402.chunk.css": "/guess-word-game/static/css/2.52f67402.chunk.css",
+    "static/js/2.b22db872.chunk.js": "/guess-word-game/static/js/2.b22db872.chunk.js",
+    "static/js/2.b22db872.chunk.js.map": "/guess-word-game/static/js/2.b22db872.chunk.js.map",
+    "index.html": "/guess-word-game/index.html",
+    "precache-manifest.443e80274f6543ac7c8987c37c96080d.js": "/guess-word-game/precache-manifest.443e80274f6543ac7c8987c37c96080d.js",
+    "service-worker.js": "/guess-word-game/service-worker.js",
+    "static/css/2.52f67402.chunk.css.map": "/guess-word-game/static/css/2.52f67402.chunk.css.map",
+    "static/css/main.8eb71605.chunk.css.map": "/guess-word-game/static/css/main.8eb71605.chunk.css.map",
+    "static/js/2.b22db872.chunk.js.LICENSE.txt": "/guess-word-game/static/js/2.b22db872.chunk.js.LICENSE.txt",
+    "static/media/blue.png": "/guess-word-game/static/media/blue.c56718d2.png",
+    "static/media/dark-blue.png": "/guess-word-game/static/media/dark-blue.5e3b8999.png",
+    "static/media/green.png": "/guess-word-game/static/media/green.0bbb3d8f.png",
+    "static/media/grey.png": "/guess-word-game/static/media/grey.41c6ea9f.png",
+    "static/media/pink.png": "/guess-word-game/static/media/pink.e8150a79.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.470dccd4.js",
+    "static/css/2.52f67402.chunk.css",
+    "static/js/2.b22db872.chunk.js",
+    "static/css/main.8eb71605.chunk.css",
+    "static/js/main.145b134d.chunk.js"
+  ]
+}
