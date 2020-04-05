@@ -46,7 +46,7 @@ const GuessWord = ({ tryCount, changeTry, incorrectChars, setIncorrectChars, cor
   }, [setWordData, tryCount, guessedWord, setCorrectChars, setIncorrectChars]);
 
   useEffect(()=> {
-    if (data.length === guessedWord.length || score>= 150){
+    if (data.length === guessedWord.length || score>= 70){
       setTotalWin(true);
     }
   }, [guessedWord, score])
