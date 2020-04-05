@@ -15,7 +15,7 @@ const Lose = ({ changeTry, setScore, score }) => (
             className="green-button"
             onClick={(e) => {
               e.preventDefault();
-              setScore(score - 20)
+              setScore(score - 20);
               changeTry(0);
             }}
           >
