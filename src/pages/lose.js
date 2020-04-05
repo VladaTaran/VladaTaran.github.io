@@ -13,7 +13,7 @@ const Lose = ({ changeTry, setScore, score }) => (
           <img alt="green monster" src={greenMonster} className="green-monster" />
           <button
             className="green-button"
-            onClick={(e) => {
+            onClick={e => {
               e.preventDefault();
               setScore(score - 20);
               changeTry(0);

@@ -29,7 +29,7 @@ const NextRound = ({ changeTry, openModal, setScore, score, word, setGuessedWord
             e.preventDefault();
             setScore(score + 5);
             const guessed = guessedWord.concat(word);
-            setGuessedWords(guessed)
+            setGuessedWords(guessed);
             changeTry(0);
             closeModal();
           }}
