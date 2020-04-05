@@ -75,7 +75,7 @@ code {
   margin: 20px auto;
 }
 .dark-blue-monster {
-  width: 250px;
+  width: 150px;
   position: absolute;
   top: 20%;
   right: 30px;
@@ -107,8 +107,7 @@ button {
   border: 1px solid #178F82;
 }
 .next-round {
-  margin: 20%;
-  height: 25%;
+  margin: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -227,11 +226,12 @@ button {
     }
     .next-round {
       margin: 0;
+      height: 100%;
     }
   }
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 768px) {
     .dark-blue-monster {
-      width: 70px;
+      width: 100px;
       position: static;
       margin: 20px auto;
     }
@@ -243,23 +243,31 @@ button {
       margin: 0;
       height: 100%;
     }
-    
+    .next-round{
+      align-items: center;
+    }
     .ReactModalPortal > .ReactModal__Overlay {
       height: 500px;
     }
   }
 
-  @media screen and (min-width: 812px) {
+  @media screen and (max-width: 480px) {
     .blue-monster {
       margin-top: 20px;
     }
-    .ReactModalPortal,
-    .next-round {
-      height: 200px;
+    .ReactModalPortal {
+      height: 400px;
       margin: 0;
     }
     .dark-blue-monster {
-      width: 100px;
+      width: 130px;
+      position: static;
+      margin-bottom: 10px;
+    }
+    .next-round {
+      margin: 0;
+      height: 400px;
+      align-items: center;
     }
     
   }

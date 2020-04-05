@@ -10,11 +10,13 @@ import Win from 'components/win';
 import blueMonster from 'images/blue.png';
 
 function getRandomWord(data, guessedWord) {
-  const dataLength = data.length && data.length - 1; 
   if (guessedWord.length === 0) {
+    const dataLength = data.length && data.length - 1; 
     return data[Math.floor(Math.random() * Math.floor(dataLength))];
   } else {
-    return data.filter(word => !guessedWord.includes(word.name))[Math.floor(Math.random() * Math.floor(dataLength))];
+    const filteredData =  data.filter(word => !guessedWord.includes(word.name));
+    const number = Math.floor(Math.random() * Math.floor(filteredData.length-1));
+    return filteredData[number];
   }
 }
 
@@ -34,6 +36,7 @@ const GuessWord = ({ tryCount, changeTry, incorrectChars, setIncorrectChars, cor
   useEffect(() => {
     if(tryCount === 0){ 
       const randomWordData = getRandomWord(data, guessedWord);
+
       if (randomWordData) {
         const wordSet = new Set(randomWordData.name);
         setWorldLength(Array.from(wordSet).length);
@@ -86,7 +89,7 @@ const GuessWord = ({ tryCount, changeTry, incorrectChars, setIncorrectChars, cor
           {correctChars.length === wordLength 
             && <NextRound
             changeTry={changeTry}
-            openModal={correctChars.length === wordLength }
+            openModal={!!correctChars.length}
             setScore={ setScore }
             score={ score }
             setGuessedWords={setGuessedWords}
