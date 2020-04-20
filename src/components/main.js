@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import Lose from 'pages/lose';
+import Lose from 'components/lose';
 import GuessWord from 'components/guessWord';
 
 

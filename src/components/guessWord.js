@@ -4,8 +4,8 @@ import data from '../data.json';
 // components
 import Keyboard from 'react-simple-keyboard';
 import 'react-simple-keyboard/build/css/index.css';
-import ukrainian from './keyboardLayout';
-import NextRound from 'pages/nextRound';
+import { ukrainian } from 'helpers';
+import NextRound from 'components/nextRound';
 import Win from 'components/win';
 import blueMonster from 'images/blue.png';
 
@@ -31,7 +31,6 @@ const GuessWord = ({ tryCount, changeTry, incorrectChars, setIncorrectChars, cor
 
   const correct = new Set(correctChars);
   const incorrect = new Set(incorrectChars);
-
   
   useEffect(() => {
     if(tryCount === 0){ 
@@ -64,7 +63,7 @@ const GuessWord = ({ tryCount, changeTry, incorrectChars, setIncorrectChars, cor
       setIncorrectChars && setIncorrectChars(Array.from(incorrect))
     }
   }
- 
+
   return (
     totalWin
     ? <Win score={ score } />
@@ -104,18 +103,18 @@ const GuessWord = ({ tryCount, changeTry, incorrectChars, setIncorrectChars, cor
             buttonTheme={[
               {
                 class: "choosen-incorrect",
-                buttons: incorrectChars && incorrectChars.join(' ')
+                buttons: incorrectChars.length ? incorrectChars.join(' ') : 'tab'
               },
               {
                 class: "choosen-correct",
-                buttons: correctChars && correctChars.join(' ')
+                buttons: correctChars.length ? correctChars.join(' ') : 'tab'
               }
             ]}
             />
         </div>
       </div>
     )
-    : <div className="content">Завантажую ...</div>
+    : <div className="content">Завантажую...</div>
   )
 }
 
