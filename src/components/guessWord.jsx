@@ -41,8 +41,8 @@ const GuessWord = ({ tryCount, changeTry, incorrectChars, setIncorrectChars, cor
         setWorldLength(Array.from(wordSet).length);
         setWordData(randomWordData);
         setword(randomWordData.name.split(''))
-        setCorrectChars && setCorrectChars([]);
-        setIncorrectChars && setIncorrectChars([]);
+        setCorrectChars([]);
+        setIncorrectChars([]);
       }
     }
   }, [setWordData, tryCount, guessedWord, setCorrectChars, setIncorrectChars]);

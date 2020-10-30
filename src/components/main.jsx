@@ -9,13 +9,7 @@ const Main = () => {
 
   const [correctChars, setCorrectChars] = useState([]);
   const [incorrectChars, setIncorrectChars] = useState([]);
-  const [score, setScore] = useState(20);
-
-    useEffect(() => {
-      let newScore = Number(window.localStorage.getItem('score'));
-      setScore(newScore)
-    }, [setScore]);
-
+  const [score, setScore] = useState(0);
 
   return (
     <div className="container-main device">
